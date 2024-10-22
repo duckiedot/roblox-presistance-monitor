@@ -1,0 +1,7 @@
+{
+  "accountsToMonitor": [
+    123
+  ],
+  "discordUserId" : 123,
+  "discordHook": "hook-here"
+}
