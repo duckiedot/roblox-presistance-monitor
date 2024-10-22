@@ -54,5 +54,5 @@ java -jar roblox-api-0.0.1-SNAPSHOT.jar
 #### Windows
 Open Command Prompt (CMD) or PowerShell, navigate to the directory where you extracted the files, and run:
 ```bash
-java -jar roblox-api-0.0.1-SNAPSHOT.jar
+"C:\Program Files\Java\jdk-17\bin\java" -jar roblox-api-0.0.1-SNAPSHOT.jar
 ```
