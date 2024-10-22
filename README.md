@@ -15,6 +15,7 @@ The Roblox Presence Checker is a Spring Boot application designed to monitor the
 - Java 17 or higher
 - A Roblox account with the account IDs you want to monitor.
 -  **Discord User ID**: To find your Discord user ID, refer to the [Discord Support article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID).
+-  **Discord Channel Webhook**: Please relate to this article [Intro to Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 ## Installation
 
