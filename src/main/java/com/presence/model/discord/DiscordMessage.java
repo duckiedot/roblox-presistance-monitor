@@ -10,6 +10,15 @@ public class DiscordMessage {
   private final long discordUserId;
   private final Map<RobloxPresenceStatus, Set<String>> userPresences;
 
+  /**
+   * Returns a string representation of the Discord message for the user.
+   *
+   * <p>If there are offline Roblox accounts, the message mentions the user and indicates that some
+   * accounts are offline. It then lists all account statuses along with the corresponding account
+   * names.
+   *
+   * @return a formatted message string for the Discord user.
+   */
   @Override
   public String toString() {
     // Create a StringBuilder to build the message
