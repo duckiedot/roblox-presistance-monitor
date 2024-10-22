@@ -38,8 +38,7 @@ The Roblox Presence Checker is a Spring Boot application designed to monitor the
      "discordUserId": 123456789, // Your Discord user ID
      "discordHook": "your-discord-hook-url" // Your Discord webhook URL
    }
-
-   # Running the App
+   ```
 
 ## Running the Application
 To run the application, follow the instructions based on your operating system:
