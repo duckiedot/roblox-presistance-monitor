@@ -30,7 +30,7 @@ public enum RobloxPresenceStatus {
    * @return the {@link RobloxPresenceStatus} associated with the given API code
    * @throws IllegalArgumentException if the API code does not map to any known status
    */
-  public RobloxPresenceStatus getByApiCode(final short apiCode) {
+  public static RobloxPresenceStatus getByApiCode(final short apiCode) {
     return Optional.ofNullable(CODE_TO_STATUS_MAP.get(apiCode))
         .orElseThrow(
             () ->

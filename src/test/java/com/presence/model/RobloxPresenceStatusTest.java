@@ -10,17 +10,17 @@ class RobloxPresenceStatusTest {
     @Test
     @DisplayName("Presence status returns correct statues")
     void testGetByApiCode_ValidApiCode() {
-        assertEquals(RobloxPresenceStatus.OFFLINE, RobloxPresenceStatus.OFFLINE.getByApiCode((short) 0));
-        assertEquals(RobloxPresenceStatus.ONLINE, RobloxPresenceStatus.ONLINE.getByApiCode((short) 1));
-        assertEquals(RobloxPresenceStatus.IN_GAME, RobloxPresenceStatus.IN_GAME.getByApiCode((short) 2));
-        assertEquals(RobloxPresenceStatus.IN_STUDIO, RobloxPresenceStatus.IN_STUDIO.getByApiCode((short) 3));
+        assertEquals(RobloxPresenceStatus.OFFLINE, RobloxPresenceStatus.getByApiCode((short) 0));
+        assertEquals(RobloxPresenceStatus.ONLINE, RobloxPresenceStatus.getByApiCode((short) 1));
+        assertEquals(RobloxPresenceStatus.IN_GAME, RobloxPresenceStatus.getByApiCode((short) 2));
+        assertEquals(RobloxPresenceStatus.IN_STUDIO, RobloxPresenceStatus.getByApiCode((short) 3));
     }
 
     @Test
     @DisplayName("Presence status correctly handles invalid inputs")
     void testGetByApiCode_InvalidApiCode() {
         IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
-            RobloxPresenceStatus.OFFLINE.getByApiCode((short) 99);
+            RobloxPresenceStatus.getByApiCode((short) 99);
         });
 
         assertEquals("RobloxPresenceStatus received invalid apiCode: 99", thrown.getMessage());
